@@ -11,9 +11,10 @@ img{display:block;max-width:100%;height:auto}
 
 /* HERO LAYOUT */
 .hero{display:grid;grid-template-columns:1fr 1fr;min-height:88vh}
-.hero-left{background:var(--panel-gradient);color:var(--text-on-dark);padding:clamp(1.25rem,4vw,3rem);display:flex;flex-direction:column;gap:1.1rem}
+.hero-left{background:var(--panel-gradient);color:var(--text-on-dark);padding:clamp(1.25rem,4vw,3rem);padding-bottom:clamp(2rem,6vw,4rem);display:flex;flex-direction:column;gap:1.1rem}
 .logo{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
-.logo-icon{width:28px;height:28px;background:var(--brand-yellow);border-radius:4px}
+/* real jerrycan image */
+.logo-icon{width:30px;height:30px;object-fit:contain;border-radius:4px}
 .logo-text{font-family:Georgia,serif;letter-spacing:.04em;color:var(--text-on-dark)}
 .hero-copy{max-width:46ch;margin-inline:auto}
 .headline{margin:.25rem 0 1rem;font-weight:800;font-size:clamp(2.25rem,5.5vw,4rem);line-height:1.05;color:#fff}
@@ -32,7 +33,8 @@ img{display:block;max-width:100%;height:auto}
 
 /* ======= MINI EQUATION (HORIZONTAL, 2 ICONS) ======= */
 /* Perfect alignment via 3-column grid: [item] [equals] [item] */
-.mini-equation.two-up{margin:1rem auto 0;max-width:560px;display:grid;grid-template-columns:minmax(120px,1fr) auto minmax(120px,1fr);align-items:center;justify-items:center;gap:clamp(.6rem,2.5vw,1.4rem);text-align:center}
+.mini-equation.two-up{margin:1.75rem auto 0; /* lowered from 1rem to give breathing room */
+max-width:560px;display:grid;grid-template-columns:minmax(120px,1fr) auto minmax(120px,1fr);align-items:center;justify-items:center;gap:clamp(.6rem,2.5vw,1.4rem);text-align:center}
 
 
 /* Identical square canvases so vertical centers match exactly */
@@ -51,7 +53,7 @@ img{display:block;max-width:100%;height:auto}
 .bottom-band{height:8px;background:var(--brand-yellow)}
 
 
-/* Responsive tweaks: keep it horizontal, scale icons down if needed */
+/* Responsive tweaks */
 @media (max-width:720px){
 .mini-img{width:88px;height:88px}
 .mini-equation.two-up{max-width:94vw}
