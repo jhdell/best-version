@@ -11,9 +11,8 @@ img{display:block;max-width:100%;height:auto}
 
 /* HERO LAYOUT */
 .hero{display:grid;grid-template-columns:1fr 1fr;min-height:88vh}
-.hero-left{background:var(--panel-gradient);color:var(--text-on-dark);padding:clamp(1.25rem,4vw,3rem);padding-bottom:clamp(2rem,6vw,4rem);display:flex;flex-direction:column;gap:1.1rem}
+.hero-left{background:var(--panel-gradient);color:var(--text-on-dark);padding:clamp(1.25rem,4vw,3rem);padding-bottom:clamp(2.2rem,6vw,5rem);display:flex;flex-direction:column;gap:1.1rem}
 .logo{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
-/* real jerrycan image */
 .logo-icon{width:30px;height:30px;object-fit:contain;border-radius:4px}
 .logo-text{font-family:Georgia,serif;letter-spacing:.04em;color:var(--text-on-dark)}
 .hero-copy{max-width:46ch;margin-inline:auto}
@@ -33,7 +32,7 @@ img{display:block;max-width:100%;height:auto}
 
 /* ======= MINI EQUATION (HORIZONTAL, 2 ICONS) ======= */
 /* Perfect alignment via 3-column grid: [item] [equals] [item] */
-.mini-equation.two-up{margin:1.75rem auto 0; /* lowered from 1rem to give breathing room */
+.mini-equation.two-up{margin:clamp(2.25rem,6vw,4rem) auto clamp(1.25rem,5vw,3rem); /* pushed lower + bottom margin */
 max-width:560px;display:grid;grid-template-columns:minmax(120px,1fr) auto minmax(120px,1fr);align-items:center;justify-items:center;gap:clamp(.6rem,2.5vw,1.4rem);text-align:center}
 
 
